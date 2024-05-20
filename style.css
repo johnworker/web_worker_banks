@@ -28,4 +28,10 @@ License URI: mit
   width: 100%;
   padding-left: min(min(var(--vw, 1vw), var(--svh, 1vh)) * 40 / 768 * 100, 30px);
   z-index: 1000;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 0 calc(min(var(--vw, 1vw), var(--svh, 1vh)) * 32 / 768 * 100);
 }/*# sourceMappingURL=style.css.map */
