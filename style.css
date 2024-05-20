@@ -34,4 +34,10 @@ License URI: mit
   display: flex;
   justify-content: center;
   padding: 0 calc(min(var(--vw, 1vw), var(--svh, 1vh)) * 32 / 768 * 100);
+}
+.container .wrapper {
+  background: linear-gradient(190deg, #dddef6, #d5e6f6 18.23%, #d4e7f5 54.32%, hsla(225, 7%, 89%, 0) 65%, hsla(225, 7%, 89%, 0));
+  margin: 0 calc(50% - var(--vw, 1vw) * 50);
+  padding: 0 calc(var(--vw, 1vw) * 50 - 50%);
+  overflow: hidden;
 }/*# sourceMappingURL=style.css.map */
