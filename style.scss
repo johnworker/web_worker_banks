@@ -31,6 +31,10 @@ $color-gray: #787878;
     overflow-x: hidden;
 }
 
+body {
+    background: linear-gradient(210deg, #dddef6, #d5e6f6 6.23%, #d4e7f5 42.32%, hsla(225, 7%, 89%, 0) 65%, hsla(225, 7%, 89%, 0));
+}
+
 .header_sec {
     display: flex;
     justify-content: space-between;
@@ -40,14 +44,13 @@ $color-gray: #787878;
     left: 0;
     width: 100%;
     z-index: 1000;
-    background: #000;
-    height: 150px;
+    background: $color_light_gray;
+    height: 70px;
 }
 
 .container {
     display: flex;
     justify-content: center;
-    padding: 0 calc(min(var(--vw, 1vw), var(--svh, 1vh)) * 32 / 768 * 100);
 
     .wrapper {
         background: linear-gradient(
