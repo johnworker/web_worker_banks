@@ -23,7 +23,7 @@ html {
 }
 
 body {
-  background: linear-gradient(190deg, #dddef6, #d5e6f6 18.23%, #d4e7f5 54.32%, hsla(225, 7%, 89%, 0) 65%, hsla(225, 7%, 89%, 0));
+  background: linear-gradient(190deg, #dddef6, #d5e6f6 18.23%, #d4e7f5 54.32%, hwb(279 80% 6%/0.419) 65%, hsla(286, 68%, 83%, 0.182));
 }
 
 .header_sec {
@@ -35,8 +35,47 @@ body {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: #919191;
-  height: 70px;
+}
+.header_sec .header_bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  z-index: -1;
+  height: min(var(--vw, 1vw) * 56 / 1280 * 300, 200px);
+}
+.header_sec .header_bg .header_bg_fig {
+  background: #ffffff;
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  z-index: 1;
+  left: 0;
+  bottom: 95px;
+}
+.header_sec .header_logo {
+  display: block;
+}
+.header_sec .header_logo a {
+  text-decoration: none;
+}
+.header_sec .header_logo a img {
+  display: block;
+  width: 130px;
+  height: auto;
+  max-width: none;
+}
+.header_sec .header_nav {
+  background: none;
+  padding: 0;
+  visibility: visible;
+  border-radius: 0;
+}
+.header_sec .header_nav .header_nav_list {
+  display: flex;
+  align-items: center;
+  gap: min(var(--vw, 1vw) * 28 / 1280 * 100, 35px);
 }
 
 .container {
