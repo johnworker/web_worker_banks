@@ -21,6 +21,7 @@ $color_background: #ebebeb;
 $color_light_gray: #919191;
 $color_dark_gray: #383838;
 $color-gray: #787878;
+$color-black: #000000;
 
 * {
     margin: 0;
@@ -48,13 +49,14 @@ body {
 
 .header_sec {
     display: flex;
-    justify-content: space-between;
     align-items: flex-end;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
+    gap: 250px;
+    padding: 5px 0 5px 30px;
 
     .header_bg {
         position: absolute;
@@ -63,7 +65,7 @@ body {
         width: 100%;
         background: $color_white;
         z-index: -1;
-        height: min(var(--vw, 1vw) * 56 / 1280 * 300, 200px);
+        height: min(var(--vw, 1vw) * 20 / 1280 * 300, 200px);
 
         .header_bg_fig {
             background: $color_white;
@@ -100,7 +102,22 @@ body {
         .header_nav_list {
             display: flex;
             align-items: center;
-            gap: min(var(--vw, 1vw) * 28 / 1280 * 100, 35px);
+            gap: min(var(--vw, 1vw) * 40 / 1280 * 100, 35px);
+
+            .header_nav_item {
+                padding: 5px;
+
+                .header_nav_button {
+                    text-decoration: none;
+                    font-size: 20px;
+                    font-weight: bolder;
+                    color: $color-black;
+
+                    &:hover {
+                        color: $color_gray;
+                    }
+                }
+            }
         }
     }
 }
