@@ -66,17 +66,26 @@ body {
         background: $color_white;
         z-index: -1;
         height: min(var(--vw, 1vw) * 20 / 1280 * 300, 200px);
+    }
 
-        .header_bg_fig {
-            background: $color_white;
-            position: absolute;
+    .header_bg_fig {
+        background: $color_white;
+        position: relative;
+        position: absolute;
+        width: 200px;
+        height: 110px;
+        z-index: -1;
+        left: 0;
+        bottom: 0;
+        border-radius: 40px;
+
+        .imgbg {
             width: 200px;
             height: auto;
-            z-index: 1;
-            left: 0;
-            bottom: 0;
-
-            
+            z-index: 5;
+            position: absolute;
+            left: 10px;
+            bottom: 10px;
         }
     }
 
