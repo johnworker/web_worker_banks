@@ -72,7 +72,7 @@ function animateCircle() {
             scale: 0.65, // 可根據需求調整擴大的比例
             opacity: 0,
             x: 200, // 固定向左移動的距離，可根據需求調整
-            y: 180,
+            y: -180,
             duration: 5, // 動畫持續2秒
             onComplete: function () {
                 gsap.delayedCall(3, animateCircle); // 3秒後重新開始動畫
@@ -92,7 +92,7 @@ function animateCircle() {
             scale: 0.65, // 可根據需求調整擴大的比例
             opacity: 0,
             x: 200, // 固定向左移動的距離，可根據需求調整
-            y: 20,
+            y: -80,
             duration: 5, // 動畫持續2秒
             onComplete: function () {
                 gsap.delayedCall(3, animateCircle); // 3秒後重新開始動畫
