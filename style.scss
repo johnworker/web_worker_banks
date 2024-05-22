@@ -65,7 +65,7 @@ body {
         width: 100%;
         background: $color_white;
         z-index: -1;
-        height: min(var(--vw, 1vw) * 20 / 1280 * 300, 200px);
+        height: 50px;
     }
 
     .header_bg_fig {
@@ -82,7 +82,7 @@ body {
         .imgbg {
             width: 200px;
             height: auto;
-            z-index: 5;
+            z-index: 3;
             position: absolute;
             left: 10px;
             bottom: 10px;
@@ -156,6 +156,22 @@ body {
             top: 50px;
         }
 
+        .image_mask_box {
+            width: 300px;
+            height: 600px;
+            position: relative;
+            z-index: 5;
+            top: 18%;
+            object-fit: cover;
+
+            .pic_masks {
+                width: 300px;
+                height: 400px;
+                object-fit: cover;
+                border-radius: 200px;
+            }
+        }
+
         .circle_bg {
             display: block;
             width: 100%;
@@ -163,9 +179,8 @@ body {
 
             .oval_img {
                 position: absolute;
-                width: 400px;
+                width: 375px;
                 top: 30%;
-                left: 35%;
                 display: block;
             }
         }
@@ -211,7 +226,7 @@ body {
             background: rgb(255, 147, 161);
             position: absolute;
             top: 35%;
-            left: 56%;
+            left: 60%;
             transform: translate(-50%, -50%);
         }
 
@@ -222,7 +237,7 @@ body {
             background: rgb(255, 168, 216);
             position: absolute;
             top: 48%;
-            left: 53%;
+            left: 60%;
             transform: translate(-50%, -50%);
         }
 
@@ -233,9 +248,17 @@ body {
             background: rgb(189, 91, 255);
             position: absolute;
             top: 52%;
-            left: 50%;
+            left: 58%;
             transform: translate(-50%, -50%);
         }
 
+        .font_caption {
+            position: absolute;
+            bottom: 110px;
+            z-index: 5;
+            font-size: 40px;
+            font-weight: bold;
+            left: 28%;
+        }
     }
 }
