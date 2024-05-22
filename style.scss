@@ -284,4 +284,16 @@ body {
             font-size: 24px;
         }
     }
+
+    .about_pic_show {
+        width: 800px;
+        margin: 0 auto;
+        height: 400px;
+        overflow: hidden;
+
+        .about_pic_things {
+            width: 800px;
+            height: 4;
+        }
+    }
 }

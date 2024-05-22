@@ -147,3 +147,20 @@ function animateCircle() {
 }
 
 animateCircle(); // 初始化動畫
+
+
+//關於我們輪播區
+// 圖片輪播
+$(document).ready(function () {
+    var $slider = $('.about_pic_show');
+    $slider.slick({
+        dots: false,
+        infinite: true,
+        arrows: false,
+        draggable: false,
+        autoplay: true,
+        speed: 5000, // 圖片切換速度為5秒
+        pauseOnHover: false,
+        cssEase: 'linear'
+    });
+});

@@ -229,4 +229,14 @@ body {
 #about .about_text_box .about_company_data {
   padding-top: 40px;
   font-size: 24px;
+}
+#about .about_pic_show {
+  width: 800px;
+  margin: 0 auto;
+  height: 400px;
+  overflow: hidden;
+}
+#about .about_pic_show .about_pic_things {
+  width: 800px;
+  height: 4;
 }/*# sourceMappingURL=style.css.map */
