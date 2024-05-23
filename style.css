@@ -380,6 +380,9 @@ body {
   font-size: 44px;
   font-weight: bold;
 }
+#FQA .QA_text_box .QA_list {
+  margin-top: 50px;
+}
 #FQA .QA_text_box .QA_list .QA_item {
   margin-bottom: 10px;
 }
