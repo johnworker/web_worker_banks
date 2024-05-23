@@ -321,7 +321,6 @@ body {
             display: grid;
             grid-template-columns: 49% 48%;
             grid-gap: 25px;
-        
 
             .worker_list_item {
                 display: grid;
@@ -337,7 +336,7 @@ body {
                     .work_list_link {
                         width: 100%;
                         height: auto;
-                                                
+
                         .work_fig {
                             clip-path: inset(
                                 0 round min(var(--vw, 1vw) * 20 / 1280 * 100, 25px)
@@ -372,6 +371,53 @@ body {
                 .work_list_body {
                     font-size: 22px;
                     line-height: 1.8;
+                }
+            }
+        }
+    }
+}
+
+// 面試資訊頁面
+#interview {
+    width: 100%;
+    height: 100vh;
+    padding-top: 30px;
+    overflow: hidden;
+
+    .interview_text_box {
+        width: 100%;
+        height: auto;
+        margin: 30px 0 50px 50px;
+
+        .interview_title {
+            font-size: 44px;
+            font-weight: bold;
+        }
+    }
+
+    .interview_body {
+        width: 100%;
+
+        .interview_next_title {
+            margin: 30px 0 50px 100px;
+            font-size: 36px;
+            font-weight: bold;
+            position: relative;
+            z-index: 1;
+        }
+
+        .interview_wrapper {
+            display: grid;
+            position: relative;
+            top: -120px;
+
+            .interview_pic {
+                width: 100%;
+                overflow: hidden;
+                padding: 0 30px;
+
+                .interview_pic_show {
+                    width: 100%;
                 }
             }
         }
