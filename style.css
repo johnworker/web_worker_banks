@@ -354,4 +354,13 @@ body {
 #interview .interview_body .interview_wrapper .interview_text_info {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  position: absolute;
+  bottom: 70px;
+}
+#interview .interview_body .interview_wrapper .interview_text_info .interview_text {
+  width: 100%;
+  padding: 0 55px;
+  color: rgb(255, 89, 0);
+  font-size: 20px;
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */
