@@ -350,4 +350,8 @@ body {
 }
 #interview .interview_body .interview_wrapper .interview_pic .interview_pic_show {
   width: 100%;
+}
+#interview .interview_body .interview_wrapper .interview_text_info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }/*# sourceMappingURL=style.css.map */
