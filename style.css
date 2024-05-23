@@ -363,4 +363,20 @@ body {
   color: rgb(255, 89, 0);
   font-size: 20px;
   font-weight: bold;
+}
+
+#FQA {
+  width: 100%;
+  height: 100vh;
+  padding-top: 30px;
+  overflow: hidden;
+}
+#FQA .QA_text_box {
+  width: 100%;
+  height: auto;
+  margin: 30px 0 50px 50px;
+}
+#FQA .QA_text_box .QA_title {
+  font-size: 44px;
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */
