@@ -312,7 +312,7 @@ body {
 
     .work_show_box {
         margin: 0 auto;
-        padding: 0 100px;
+        padding: 0 80px;
         position: relative;
 
         .worker_list {
@@ -320,7 +320,7 @@ body {
             height: auto;
             display: grid;
             grid-template-columns: 49% 48%;
-            grid-gap: 20px;
+            grid-gap: 25px;
         
 
             .worker_list_item {
@@ -332,13 +332,12 @@ body {
                 .work_list_head {
                     overflow-y: hidden;
                     border-radius: 20px;
+                    background: brown;
 
                     .work_list_link {
-                        
-                        &:hover{
-                            clip-path: none;
-                        }
-                        
+                        width: 100%;
+                        height: auto;
+                                                
                         .work_fig {
                             clip-path: inset(
                                 0 round min(var(--vw, 1vw) * 20 / 1280 * 100, 25px)
@@ -347,15 +346,21 @@ body {
                                     min(var(--vw, 1vw) * 20 / 1280 * 100, 25px)
                             );
 
+                            transition: clip-path 0.3s ease;
+
+                            &:hover {
+                                clip-path: inset(0);
+                            }
+
                             .work_fig_pic {
                                 display: block;
-                                width: 420px;
+                                width: 100%;
                                 height: 300px;
                                 transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1);
                                 overflow-y: hidden;
 
                                 img {
-                                    width: 420px;
+                                    width: 100%;
                                     height: 300px;
                                     object-fit: cover;
                                 }

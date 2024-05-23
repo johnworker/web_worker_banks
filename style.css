@@ -259,7 +259,7 @@ body {
 }
 #work .work_show_box {
   margin: 0 auto;
-  padding: 0 100px;
+  padding: 0 80px;
   position: relative;
 }
 #work .work_show_box .worker_list {
@@ -267,7 +267,7 @@ body {
   height: auto;
   display: grid;
   grid-template-columns: 49% 48%;
-  grid-gap: 20px;
+  grid-gap: 25px;
 }
 #work .work_show_box .worker_list .worker_list_item {
   display: grid;
@@ -278,24 +278,32 @@ body {
 #work .work_show_box .worker_list .worker_list_item .work_list_head {
   overflow-y: hidden;
   border-radius: 20px;
+  background: brown;
 }
-#work .work_show_box .worker_list .worker_list_item .work_list_head .work_list_link:hover {
-  -webkit-clip-path: none;
-          clip-path: none;
+#work .work_show_box .worker_list .worker_list_item .work_list_head .work_list_link {
+  width: 100%;
+  height: auto;
 }
 #work .work_show_box .worker_list .worker_list_item .work_list_head .work_list_link .work_fig {
   -webkit-clip-path: inset(0 round min(var(--vw, 1vw) * 20 / 1280 * 100, 25px) min(var(--vw, 1vw) * 20 / 1280 * 100, 25px) min(var(--vw, 1vw) * 200 / 1280 * 100, 250px) min(var(--vw, 1vw) * 20 / 1280 * 100, 25px));
           clip-path: inset(0 round min(var(--vw, 1vw) * 20 / 1280 * 100, 25px) min(var(--vw, 1vw) * 20 / 1280 * 100, 25px) min(var(--vw, 1vw) * 200 / 1280 * 100, 250px) min(var(--vw, 1vw) * 20 / 1280 * 100, 25px));
+  transition: -webkit-clip-path 0.3s ease;
+  transition: clip-path 0.3s ease;
+  transition: clip-path 0.3s ease, -webkit-clip-path 0.3s ease;
+}
+#work .work_show_box .worker_list .worker_list_item .work_list_head .work_list_link .work_fig:hover {
+  -webkit-clip-path: inset(0);
+          clip-path: inset(0);
 }
 #work .work_show_box .worker_list .worker_list_item .work_list_head .work_list_link .work_fig .work_fig_pic {
   display: block;
-  width: 420px;
+  width: 100%;
   height: 300px;
   transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1);
   overflow-y: hidden;
 }
 #work .work_show_box .worker_list .worker_list_item .work_list_head .work_list_link .work_fig .work_fig_pic img {
-  width: 420px;
+  width: 100%;
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
