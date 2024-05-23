@@ -164,3 +164,12 @@ $(document).ready(function () {
         cssEase: 'linear'
     });
 });
+
+// Q&A開合選單
+$(document).ready(function() {
+    // FAQ 切換
+    $('.QA_question').click(function() {
+        $(this).next('.QA_answer').slideToggle();
+        $(this).parent('.QA_item').siblings().find('.QA_answer').slideUp();
+    });
+});

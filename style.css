@@ -379,4 +379,21 @@ body {
 #FQA .QA_text_box .QA_title {
   font-size: 44px;
   font-weight: bold;
+}
+#FQA .QA_text_box .QA_list .QA_item {
+  margin-bottom: 10px;
+}
+#FQA .QA_text_box .QA_list .QA_item .QA_question {
+  background-color: #0057b8;
+  color: white;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+#FQA .QA_text_box .QA_list .QA_item .QA_answer {
+  display: none;
+  background-color: #f1f1f1;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 5px;
 }/*# sourceMappingURL=style.css.map */

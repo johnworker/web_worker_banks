@@ -454,5 +454,27 @@ body {
             font-size: 44px;
             font-weight: bold;
         }
+
+        .QA_list {
+            .QA_item {
+                margin-bottom: 10px;
+
+                .QA_question {
+                    background-color: #0057b8;
+                    color: white;
+                    padding: 15px;
+                    cursor: pointer;
+                    border-radius: 5px;
+                }
+
+                .QA_answer {
+                    display: none;
+                    background-color: #f1f1f1;
+                    padding: 15px;
+                    border-radius: 5px;
+                    margin-top: 5px;
+                }
+            }
+        }
     }
 }
