@@ -37,14 +37,7 @@ html {
 }
 
 body {
-    background: linear-gradient(
-        190deg,
-        #dddef6,
-        #d5e6f6 18.23%,
-        #d4e7f5 54.32%,
-        #d4e7f5,
-        #d4e7f5
-    );
+    background: linear-gradient(190deg, #dddef6, #d5e6f6 18.23%, #d4e7f5 54.32%, #d4e7f5, #d4e7f5);
 }
 
 .header_sec {
@@ -269,7 +262,7 @@ body {
     height: 100vh;
     padding-top: 30px;
 
-    .about_text_box{
+    .about_text_box {
         width: 100%;
         height: auto;
         margin: 30px 0 0 50px;
@@ -306,7 +299,7 @@ body {
     padding-top: 30px;
     overflow: hidden;
 
-    .work_text_box{
+    .work_text_box {
         width: 100%;
         height: auto;
         margin: 30px 0 50px 50px;
@@ -317,4 +310,65 @@ body {
         }
     }
 
+    .work_show_box {
+        margin: 0 auto;
+        padding: 0 100px;
+        position: relative;
+
+        .worker_list {
+            width: 100%;
+            height: auto;
+            display: grid;
+            grid-template-columns: 49% 48%;
+            grid-gap: 20px;
+        
+
+            .worker_list_item {
+                display: grid;
+                grid-template-rows: 60% 40%;
+                grid-gap: 20px;
+                overflow-y: hidden;
+
+                .work_list_head {
+                    overflow-y: hidden;
+                    border-radius: 20px;
+
+                    .work_list_link {
+                        
+                        &:hover{
+                            clip-path: none;
+                        }
+                        
+                        .work_fig {
+                            clip-path: inset(
+                                0 round min(var(--vw, 1vw) * 20 / 1280 * 100, 25px)
+                                    min(var(--vw, 1vw) * 20 / 1280 * 100, 25px)
+                                    min(var(--vw, 1vw) * 200 / 1280 * 100, 250px)
+                                    min(var(--vw, 1vw) * 20 / 1280 * 100, 25px)
+                            );
+
+                            .work_fig_pic {
+                                display: block;
+                                width: 420px;
+                                height: 300px;
+                                transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1);
+                                overflow-y: hidden;
+
+                                img {
+                                    width: 420px;
+                                    height: 300px;
+                                    object-fit: cover;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .work_list_body {
+                    font-size: 22px;
+                    line-height: 1.8;
+                }
+            }
+        }
+    }
 }
