@@ -479,3 +479,48 @@ body {
         }
     }
 }
+
+// 頁尾
+footer {
+    background: #eed1ff76;
+    margin-bottom: 50px;
+    padding: 30px;
+    text-align: center;
+
+    .home_link_box {
+        overflow-y: hidden;
+    }
+
+    .logo {
+        color: $color-white;
+        font-size: 14px;
+        padding: 10px 0;
+        text-decoration: none;
+
+        .logo_font {
+            width: 100px;
+        }
+    }
+
+    .copy {
+        color: $color-black;
+        font-size: 14px;
+    }
+
+    .many_info {
+        padding: 1px 0;
+
+        .text_info {
+            color: $color-black;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 5px;
+
+            @media screen and (max-width: $mobile) {
+                display: block;
+                padding: 12px 0;
+            }
+        }
+    }
+
+}

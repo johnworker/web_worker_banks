@@ -399,4 +399,42 @@ body {
   padding: 15px;
   border-radius: 5px;
   margin-top: 5px;
+}
+
+footer {
+  background: rgba(238, 209, 255, 0.462745098);
+  margin-bottom: 50px;
+  padding: 30px;
+  text-align: center;
+}
+footer .home_link_box {
+  overflow-y: hidden;
+}
+footer .logo {
+  color: #ffffff;
+  font-size: 14px;
+  padding: 10px 0;
+  text-decoration: none;
+}
+footer .logo .logo_font {
+  width: 100px;
+}
+footer .copy {
+  color: #000000;
+  font-size: 14px;
+}
+footer .many_info {
+  padding: 1px 0;
+}
+footer .many_info .text_info {
+  color: #000000;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 5px;
+}
+@media screen and (max-width: 767px) {
+  footer .many_info .text_info {
+    display: block;
+    padding: 12px 0;
+  }
 }/*# sourceMappingURL=style.css.map */
