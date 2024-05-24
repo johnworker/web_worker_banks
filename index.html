@@ -7,6 +7,8 @@
     <title>參考歐力士銀行求職網</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -16,23 +18,23 @@
             <img class="imgbg" src="./images/white_horizontal.jpg" alt="底圖橫標">
         </div>
         <div class="header_logo">
-            <a class="logo" href="">
+            <a class="logo" href="./index.html">
                 <img src="./images/font_logo.png" alt="">
             </a>
         </div>
         <div class="header_nav">
             <ul class="header_nav_list">
                 <li class="header_nav_item">
-                    <a class="header_nav_button" href="">ABOUT</a>
+                    <a class="header_nav_button" href="#about">ABOUT</a>
                 </li>
                 <li class="header_nav_item">
-                    <a class="header_nav_button" href="">WORK</a>
+                    <a class="header_nav_button" href="#work">WORK</a>
                 </li>
                 <li class="header_nav_item">
-                    <a class="header_nav_button" href="">INTERVIEW</a>
+                    <a class="header_nav_button" href="#interview">INTERVIEW</a>
                 </li>
                 <li class="header_nav_item">
-                    <a class="header_nav_button" href="">FAQ</a>
+                    <a class="header_nav_button" href="#FQA">FAQ</a>
                 </li>
                 <li class="header_nav_item">
                     <a class="header_nav_button news_nav" href="">NEWS</a>
@@ -41,7 +43,7 @@
         </div>
     </header>
 
-    <section id="container">
+    <section id="container" data-aos="fade" data-aos-duration="3000">
         <div class="wrapper">
             <h1 class="wrapper_title">職業招聘</h1>
             <div class="circle_bg">
@@ -66,7 +68,7 @@
     </section>
 
     <!-- 關於頁面 -->
-    <section id="about">
+    <section id="about" data-aos="fade" data-aos-duration="3000">
         <div class="about_text_box">
             <h2 class="about_title">關於歐力士銀行</h2>
             <p class="about_company_data">招聘用的公司介紹資料</p>
@@ -80,7 +82,7 @@
     </section>
 
     <!-- 工作項目頁面 -->
-    <section id="work">
+    <section id="work" data-aos="fade" data-aos-duration="3000">
         <div class="work_text_box">
             <h2 class="work_title">在歐力士銀行工作</h2>
         </div>
@@ -132,7 +134,7 @@
     </section>
 
     <!-- 面試資訊頁面 -->
-    <section id="interview">
+    <section id="interview" data-aos="fade" data-aos-duration="3000">
         <div class="interview_text_box">
             <h2 class="interview_title">了解工作人員</h2>
         </div>
@@ -164,7 +166,7 @@
     </section>
 
     <!-- 常見問題頁面 -->
-    <section id="FQA">
+    <section id="FQA" data-aos="fade" data-aos-duration="3000">
         <div class="QA_text_box">
             <div class="QA_title">常見問題</div>
             <div class="QA_list">
@@ -210,7 +212,7 @@
     <!-- 頁尾 -->
     <footer>
         <div class="home_link_box">
-            <a href="" class="logo"><img class="logo_font" src="./images/font_logo.png" alt="網站標示"></a>
+            <a href="./index.html" class="logo"><img class="logo_font" src="./images/font_logo.png" alt="網站標示"></a>
         </div>
         <small class="copy">
             &copy; Darkness 2021.
@@ -221,6 +223,11 @@
         </div>
     </footer>
 
+     <!-- AOS CDN -->
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+         AOS.init();
+     </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
