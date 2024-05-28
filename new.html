@@ -11,30 +11,107 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
+<header class="header_sec">
+    <div class="header_bg"></div>
+    <div class="header_bg_fig">
+        <img class="imgbg" src="./images/white_horizontal.jpg" alt="底圖橫標">
+    </div>
+    <div class="header_logo">
+        <a class="logo" href="./index.html">
+            <img src="./images/font_logo.png" alt="">
+        </a>
+    </div>
+    <div class="header_nav">
+        <ul class="header_nav_list">
+            <li class="header_nav_item">
+                <a class="header_nav_button" href="#about">ABOUT</a>
+            </li>
+            <li class="header_nav_item">
+                <a class="header_nav_button" href="#work">WORK</a>
+            </li>
+            <li class="header_nav_item">
+                <a class="header_nav_button" href="#interview">INTERVIEW</a>
+            </li>
+            <li class="header_nav_item">
+                <a class="header_nav_button" href="#FQA">FAQ</a>
+            </li>
+            <li class="header_nav_item">
 
-    <!-- 頁尾 -->
-    <footer>
-        <div class="home_link_box">
-            <a href="./index.html" class="logo"><img class="logo_font" src="./images/font_logo.png" alt="網站標示"></a>
-        </div>
-        <small class="copy">
-            &copy; Darkness 2021.
-        </small>
-        <div class="many_info">
-            <p class="text_info">註冊金融機構：關東地方財政局（東金）第 11 號</p>
-            <p class="text_info">會員協會：日本證券交易商協會 銀行代碼：0307</p>
-        </div>
-    </footer>
+                <button class="new_btn">
+                    <a class="header_nav_button news_nav" href="./new.html">
+                        NEWS
+                    </a>
+                </button>
+                
+            </li>
+        </ul>
+    </div>
+</header>
 
-     <!-- AOS CDN -->
-     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-     <script>
-         AOS.init();
-     </script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="./main.js"></script>
+<section class="container">
+    <div class="employment-status">
+        <button class="status-btn" id="all-status">全部</button>
+        <button class="status-btn active" id="full-time">全職員工</button>
+    </div>
+    <div class="company-info">
+        <h2>關於我們</h2>
+        <table>
+            <tr>
+                <td>公司名稱</td>
+                <td>歐力士銀行</td>
+            </tr>
+            <tr>
+                <td>總公司所在地</td>
+                <td>東京都港區芝 3-22-8 歐力士幹大廈</td>
+            </tr>
+            <tr>
+                <td>代表取締役社長</td>
+                <td>錦織雄一</td>
+            </tr>
+            <tr>
+                <td>設立</td>
+                <td>1993 年 8 月 23 日</td>
+            </tr>
+            <tr>
+                <td>首都</td>
+                <td>450億日元</td>
+            </tr>
+            <tr>
+                <td>股東</td>
+                <td>歐力士株式會社 (100%)</td>
+            </tr>
+            <tr>
+                <td>在職員工人數</td>
+                <td>834人（截至2023年9月30日）</td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+
+<!-- 頁尾 -->
+<footer>
+    <div class="home_link_box">
+        <a href="./index.html" class="logo"><img class="logo_font" src="./images/font_logo.png" alt="網站標示"></a>
+    </div>
+    <small class="copy">
+        &copy; Darkness 2021.
+    </small>
+    <div class="many_info">
+        <p class="text_info">註冊金融機構：關東地方財政局（東金）第 11 號</p>
+        <p class="text_info">會員協會：日本證券交易商協會 銀行代碼：0307</p>
+    </div>
+</footer>
+
+<!-- AOS CDN -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="./main.js"></script>
 
 </body>
 

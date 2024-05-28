@@ -22,6 +22,10 @@ $color_light_gray: #919191;
 $color_dark_gray: #383838;
 $color-gray: #787878;
 $color-black: #000000;
+$primary-color: #007bff;
+$background-color: #f8f9fa;
+$button-active-color: #0056b3;
+$button-text-color: #ffffff;
 
 * {
     margin: 0;
@@ -48,7 +52,7 @@ body {
     left: 0;
     width: 100%;
     z-index: 1000;
-    gap: 250px;
+    gap: 350px;
     padding: 5px 0 5px 30px;
 
     .header_bg {
@@ -110,15 +114,47 @@ body {
 
             .header_nav_item {
                 padding: 5px;
+                margin: 0 20px;
 
                 .header_nav_button {
                     text-decoration: none;
                     font-size: 20px;
                     font-weight: bolder;
                     color: $color-black;
+                }
+
+                // 效果按鈕
+                .new_btn {
+                    position: absolute;
+                    content: "";
+                    text-decoration: none;
+                    font-size: 20px;
+                    font-weight: bolder;
+                    color: $color-white;
+                    width: 100px;
+                    height: 50px;
+                    bottom: 0;
+                    right: 0;
+                    z-index: -1;
+                    background-color: #000000;
+                    border-radius: 5px;
+                    border: none;
+                    box-shadow:
+                        inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+                        7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+                        4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+                    transition: all 0.3s ease;
+
+                    .news_nav {
+                        text-decoration: none;
+                        font-size: 20px;
+                        font-weight: bolder;
+                        color: $color-white;
+                    }                    
 
                     &:hover {
-                        color: $color_gray;
+                        background-color: #663dff;
+
                     }
                 }
             }
@@ -354,13 +390,13 @@ body {
                             .work_fig_pic {
                                 display: block;
                                 width: 100%;
-                                height: 300px;
+                                height: 500px;
                                 transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1);
                                 overflow-y: hidden;
 
                                 img {
                                     width: 100%;
-                                    height: 300px;
+                                    height: 500px;
                                     object-fit: cover;
                                 }
                             }
@@ -524,6 +560,59 @@ footer {
                 display: block;
                 padding: 12px 0;
             }
+        }
+    }
+}
+
+// new頁面
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    height: 75vh;
+}
+
+.employment-status {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+
+    .status-btn {
+        background-color: $primary-color;
+        color: $button-text-color;
+        border: none;
+        padding: 10px 20px;
+        margin-right: 10px;
+        cursor: pointer;
+
+        &.active {
+            background-color: $button-active-color;
+        }
+    }
+}
+
+.company-info {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    h2 {
+        margin-top: 0;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+
+        td {
+            padding: 10px;
+            border: 1px solid #dddddd;
+        }
+
+        td:first-child {
+            font-weight: bold;
+            width: 30%;
         }
     }
 }

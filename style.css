@@ -34,7 +34,7 @@ body {
   left: 0;
   width: 100%;
   z-index: 1000;
-  gap: 250px;
+  gap: 350px;
   padding: 5px 0 5px 30px;
 }
 .header_sec .header_bg {
@@ -90,6 +90,7 @@ body {
 }
 .header_sec .header_nav .header_nav_list .header_nav_item {
   padding: 5px;
+  margin: 0 20px;
 }
 .header_sec .header_nav .header_nav_list .header_nav_item .header_nav_button {
   text-decoration: none;
@@ -97,8 +98,32 @@ body {
   font-weight: bolder;
   color: #000000;
 }
-.header_sec .header_nav .header_nav_list .header_nav_item .header_nav_button:hover {
-  color: #787878;
+.header_sec .header_nav .header_nav_list .header_nav_item .new_btn {
+  position: absolute;
+  content: "";
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #ffffff;
+  width: 100px;
+  height: 50px;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #000000;
+  border-radius: 5px;
+  border: none;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.header_sec .header_nav .header_nav_list .header_nav_item .new_btn .news_nav {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #ffffff;
+}
+.header_sec .header_nav .header_nav_list .header_nav_item .new_btn:hover {
+  background-color: #663dff;
 }
 
 #container {
@@ -298,13 +323,13 @@ body {
 #work .work_show_box .worker_list .worker_list_item .work_list_head .work_list_link .work_fig .work_fig_pic {
   display: block;
   width: 100%;
-  height: 300px;
+  height: 500px;
   transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1);
   overflow-y: hidden;
 }
 #work .work_show_box .worker_list .worker_list_item .work_list_head .work_list_link .work_fig .work_fig_pic img {
   width: 100%;
-  height: 300px;
+  height: 500px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -437,4 +462,50 @@ footer .many_info .text_info {
     display: block;
     padding: 12px 0;
   }
+}
+
+.container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  height: 75vh;
+}
+
+.employment-status {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+.employment-status .status-btn {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.employment-status .status-btn.active {
+  background-color: #0056b3;
+}
+
+.company-info {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.company-info h2 {
+  margin-top: 0;
+}
+.company-info table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.company-info table td {
+  padding: 10px;
+  border: 1px solid #dddddd;
+}
+.company-info table td:first-child {
+  font-weight: bold;
+  width: 30%;
 }/*# sourceMappingURL=style.css.map */

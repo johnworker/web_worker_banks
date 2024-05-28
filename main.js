@@ -173,3 +173,19 @@ $(document).ready(function() {
         $(this).parent('.QA_item').siblings().find('.QA_answer').slideUp();
     });
 });
+
+
+// 新消息頁面
+document.addEventListener('DOMContentLoaded', () => {
+    const allStatusBtn = document.getElementById('all-status');
+    const fullTimeBtn = document.getElementById('full-time');
+    const statusButtons = document.querySelectorAll('.status-btn');
+
+    statusButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            statusButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+        });
+    });
+
+});
