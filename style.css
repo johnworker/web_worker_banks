@@ -106,8 +106,18 @@ body {
   align-items: center;
   gap: min(var(--vw, 1vw) * 40 / 1280 * 100, 35px);
 }
+@media screen and (max-width: 767px) {
+  .header_sec .header_nav .header_nav_list {
+    gap: 5px;
+  }
+}
 .header_sec .header_nav .header_nav_list .header_nav_item {
   padding: 5px 15px;
+}
+@media screen and (max-width: 767px) {
+  .header_sec .header_nav .header_nav_list .header_nav_item {
+    padding: 5px;
+  }
 }
 .header_sec .header_nav .header_nav_list .header_nav_item .header_nav_button {
   text-decoration: none;

@@ -127,8 +127,16 @@ body {
             align-items: center;
             gap: min(var(--vw, 1vw) * 40 / 1280 * 100, 35px);
 
+            @media screen and (max-width: $mobile) {
+                gap: 5px;
+            }
+
             .header_nav_item {
                 padding: 5px 15px;
+
+                @media screen and (max-width: $mobile) {
+                    padding: 5px;
+                }
 
                 .header_nav_button {
                     text-decoration: none;
