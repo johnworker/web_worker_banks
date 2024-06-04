@@ -391,6 +391,11 @@ body {
   grid-gap: 20px;
   overflow-y: hidden;
 }
+@media screen and (max-width: 767px) {
+  #work .work_show_box .worker_list .worker_list_item {
+    grid-template-rows: 50% 50%;
+  }
+}
 #work .work_show_box .worker_list .worker_list_item .work_list_head {
   overflow-y: hidden;
   border-radius: 20px;
@@ -418,11 +423,21 @@ body {
   transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1);
   overflow-y: hidden;
 }
+@media screen and (max-width: 767px) {
+  #work .work_show_box .worker_list .worker_list_item .work_list_head .work_list_link .work_fig .work_fig_pic {
+    height: 300px;
+  }
+}
 #work .work_show_box .worker_list .worker_list_item .work_list_head .work_list_link .work_fig .work_fig_pic img {
   width: 100%;
   height: 500px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media screen and (max-width: 767px) {
+  #work .work_show_box .worker_list .worker_list_item .work_list_head .work_list_link .work_fig .work_fig_pic img {
+    height: 300px;
+  }
 }
 #work .work_show_box .worker_list .worker_list_item .work_list_body {
   font-size: 22px;
