@@ -98,7 +98,6 @@ body {
 .header_sec .header_nav {
   background: none;
   padding: 0;
-  visibility: visible;
   border-radius: 0;
 }
 .header_sec .header_nav .menu_box {
@@ -243,6 +242,11 @@ body {
   display: flex;
   justify-content: center;
 }
+@media screen and (max-width: 767px) {
+  #container {
+    overflow: hidden;
+  }
+}
 #container .wrapper {
   background: linear-gradient(190deg, #dddef6, #d5e6f6 18.23%, #d4e7f5 54.32%, hsla(225, 7%, 89%, 0) 65%, hsla(225, 7%, 89%, 0));
   margin: 0 calc(50% - var(--vw, 1vw) * 50);
@@ -383,6 +387,8 @@ body {
   #about {
     margin-top: 130px;
     width: 375px;
+    height: 70vh;
+    overflow: hidden;
   }
 }
 #about .about_text_box {
@@ -423,6 +429,9 @@ body {
 @media screen and (max-width: 767px) {
   #about .about_pic_show .about_pic_things {
     width: 375px;
+    margin: 0 auto;
+    display: block;
+    height: 245px;
   }
 }
 
@@ -434,8 +443,10 @@ body {
 }
 @media screen and (max-width: 767px) {
   #work {
-    margin: 30px 0 20px 20px;
-    height: 190vh;
+    margin: 30px 0 20px;
+    height: 144vh;
+    width: 375px;
+    overflow: hidden;
   }
 }
 #work .work_text_box {
@@ -457,9 +468,9 @@ body {
   padding: 0 80px;
   position: relative;
 }
-@media screen and (min-width: 767px) {
+@media screen and (max-width: 767px) {
   #work .work_show_box {
-    padding: 0 50px;
+    padding: 0 30px;
   }
 }
 #work .work_show_box .worker_list {
@@ -546,6 +557,8 @@ body {
 @media screen and (max-width: 767px) {
   #interview {
     height: 60vh;
+    width: 375px;
+    overflow: hidden;
   }
 }
 #interview .interview_text_box {
