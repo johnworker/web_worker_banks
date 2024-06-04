@@ -20,12 +20,12 @@ License URI: mit
 
 html {
   height: 100%;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 body {
   background: linear-gradient(190deg, #dddef6, #d5e6f6 18.23%, #d4e7f5 54.32%, #d4e7f5, #d4e7f5);
-  overflow-x: hidden;
+  overflow: hidden !important;
 }
 
 .header_sec {
@@ -52,6 +52,11 @@ body {
   background: #ffffff;
   z-index: -1;
   height: 50px;
+}
+@media screen and (max-width: 767px) {
+  .header_sec .header_bg {
+    height: 75px;
+  }
 }
 .header_sec .header_bg_fig {
   background: #ffffff;
@@ -120,6 +125,12 @@ body {
   transition: background 0.3s;
   cursor: pointer;
 }
+@media screen and (max-width: 767px) {
+  .header_sec .header_nav .menu_box .menu_btn {
+    bottom: 0;
+    right: 60px;
+  }
+}
 .header_sec .header_nav .menu_box .menu_btn:hover {
   background: rgba(255, 255, 255, 0);
 }
@@ -165,6 +176,35 @@ body {
   margin-bottom: 50px;
   position: relative;
   z-index: 50;
+}
+.header_sec .header_nav .menu_box .menu_wrap ul li .menu_new_btn {
+  content: "";
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #ffffff;
+  width: 100px;
+  height: 50px;
+  z-index: -1;
+  background-color: #000000;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 767px) {
+  .header_sec .header_nav .menu_box .menu_wrap ul li .menu_new_btn {
+    width: 240px;
+    height: 80px;
+  }
+}
+.header_sec .header_nav .menu_box .menu_wrap ul li .menu_new_btn .menu_new_nav {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #ffffff;
+}
+.header_sec .header_nav .menu_box .menu_wrap ul li .menu_new_btn:hover {
+  background-color: #0057b8;
 }
 .header_sec .header_nav .menu_box .menu_wrap ul li img {
   width: 30px;
@@ -633,7 +673,9 @@ body {
 }
 @media screen and (max-width: 767px) {
   #FQA {
-    height: 84vh;
+    height: 90vh;
+    width: 375px;
+    overflow: hidden;
   }
 }
 #FQA .QA_text_box {
