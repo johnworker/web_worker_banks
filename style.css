@@ -313,6 +313,7 @@ body {
   position: relative;
   z-index: 5;
   top: 18%;
+  left: 45%;
   -o-object-fit: cover;
      object-fit: cover;
 }
