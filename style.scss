@@ -331,11 +331,16 @@ body {
 
     @media screen and (max-width: $mobile) {
         overflow: hidden;
+        width: 375px;
     }
 
     .wrapper {
         width: 100%;
         box-sizing: border-box;
+
+        @media screen and (max-width: $mobile) {
+            width: 375px;
+        }    
 
         background: linear-gradient(
             190deg,
@@ -526,7 +531,7 @@ body {
     .about_pic_show {
         width: 800px;
         margin: 0 auto;
-        height: 450px;
+        height: 500px;
         overflow: hidden;
         padding-top: 50px;
 
@@ -535,6 +540,7 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
+            height: auto;
         }
     }
 
@@ -828,7 +834,7 @@ footer {
     text-align: center;
 
     @media screen and (max-width: $mobile) {
-        height: 40vh;
+        height: 100%;
     }
 
     .home_link_box {
