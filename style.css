@@ -345,8 +345,9 @@ body {
 #container .wrapper .circle_bg .oval_img {
   position: absolute;
   width: 375px;
-  top: 30%;
+  top: 20%;
   display: block;
+  left: 45%;
 }
 @media screen and (max-width: 767px) {
   #container .wrapper .circle_bg .oval_img {
@@ -354,8 +355,8 @@ body {
     height: auto;
     width: 300px;
     position: absolute;
-    right: 30px;
     top: 270px;
+    left: 60px;
   }
 }
 #container .wrapper .animate_curcle_one {
@@ -420,15 +421,14 @@ body {
 }
 #container .wrapper .font_caption {
   position: absolute;
-  bottom: 110px;
   z-index: 5;
   font-size: 40px;
   font-weight: bold;
-  left: 28%;
+  left: 38%;
 }
 @media screen and (max-width: 767px) {
   #container .wrapper .font_caption {
-    bottom: 150px;
+    bottom: 30px;
     left: 10%;
   }
 }
