@@ -285,7 +285,6 @@ body {
                     @media screen and (max-width: $mobile) {
                         width: 100%;
                     }
-        
                 }
 
                 // 效果按鈕
@@ -362,11 +361,11 @@ body {
             position: relative;
             z-index: 5;
             top: 18%;
-            left: 45%;
             object-fit: cover;
 
             @media screen and (max-width: $mobile) {
                 width: 200px;
+                left: 90px;
                 overflow: hidden;
             }
 
@@ -392,7 +391,6 @@ body {
                 position: absolute;
                 width: 375px;
                 top: 30%;
-                left: 45%;
                 display: block;
 
                 @media screen and (max-width: $mobile) {
@@ -482,7 +480,7 @@ body {
             left: 28%;
 
             @media screen and (max-width: $mobile) {
-                bottom: 40px;
+                bottom: 150px;
                 left: 10%;
             }
         }
@@ -532,23 +530,22 @@ body {
         padding-top: 50px;
 
         @media screen and (max-width: $mobile) {
-                width: 375px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
+            width: 375px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
+    }
 
-        .about_pic_things {
-            width: 800px;
-            height: 4;
+    .about_pic_things {
+        width: 800px;
+        height: 4;
 
-            @media screen and (max-width: $mobile) {
-                width: 375px;
-                margin: 0 auto;
-                display: block;
-                height: 245px;
-            }
+        @media screen and (max-width: $mobile) {
+            width: 375px;
+            margin: 0 auto;
+            display: block;
+            height: 245px;
         }
     }
 }
@@ -791,7 +788,6 @@ body {
         @media screen and (max-width: $mobile) {
             word-wrap: break-word;
         }
-    
 
         .QA_title {
             font-size: 44px;

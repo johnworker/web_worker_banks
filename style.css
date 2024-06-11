@@ -17,32 +17,15 @@ License URI: mit
   box-sizing: border-box;
   overflow-x: hidden;
 }
-@media screen and (max-width: 767px) {
-  * {
-    overflow-x: hidden !important;
-    width: 375px;
-  }
-}
 
 html {
   height: 100%;
   overflow-x: hidden !important;
 }
-@media screen and (max-width: 767px) {
-  html {
-    overflow-x: hidden !important;
-    width: 375px;
-  }
-}
 
 body {
   background: linear-gradient(190deg, #dddef6, #d5e6f6 18.23%, #d4e7f5 54.32%, #d4e7f5, #d4e7f5);
-  overflow-x: hidden !important;
-}
-@media screen and (max-width: 767px) {
-  body {
-    overflow-x: hidden !important;
-  }
+  overflow: hidden !important;
 }
 
 .header_sec {
@@ -336,6 +319,7 @@ body {
 @media screen and (max-width: 767px) {
   #container .wrapper .image_mask_box {
     width: 200px;
+    left: 90px;
     overflow: hidden;
   }
 }
@@ -355,6 +339,7 @@ body {
   display: block;
   width: 100%;
   height: auto;
+  left: 45%;
 }
 #container .wrapper .circle_bg .oval_img {
   position: absolute;
@@ -442,7 +427,7 @@ body {
 }
 @media screen and (max-width: 767px) {
   #container .wrapper .font_caption {
-    bottom: 40px;
+    bottom: 150px;
     left: 10%;
   }
 }
