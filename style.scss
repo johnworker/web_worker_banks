@@ -673,14 +673,13 @@ body {
 
 // 面試資訊頁面
 #interview {
-    width: 100%;
-    height: 120vh;
     padding-top: 30px;
     overflow: hidden;
 
     @media screen and (min-width: $mobile) {
         height: 120vh;
         width: 100%;
+        padding-top: 30px;
     }
 
     @media screen and (max-width: $mobile) {
