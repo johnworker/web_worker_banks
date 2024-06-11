@@ -17,15 +17,32 @@ License URI: mit
   box-sizing: border-box;
   overflow-x: hidden;
 }
+@media screen and (max-width: 767px) {
+  * {
+    overflow-x: hidden !important;
+    width: 375px;
+  }
+}
 
 html {
   height: 100%;
   overflow-x: hidden !important;
 }
+@media screen and (max-width: 767px) {
+  html {
+    overflow-x: hidden !important;
+    width: 375px;
+  }
+}
 
 body {
   background: linear-gradient(190deg, #dddef6, #d5e6f6 18.23%, #d4e7f5 54.32%, #d4e7f5, #d4e7f5);
-  overflow: hidden !important;
+  overflow-x: hidden !important;
+}
+@media screen and (max-width: 767px) {
+  body {
+    overflow-x: hidden !important;
+  }
 }
 
 .header_sec {
@@ -233,6 +250,7 @@ body {
   .header_sec .header_nav .header_nav_list {
     gap: 5px;
     display: none;
+    width: 100%;
   }
 }
 .header_sec .header_nav .header_nav_list .header_nav_item {
@@ -242,6 +260,7 @@ body {
 @media screen and (max-width: 767px) {
   .header_sec .header_nav .header_nav_list .header_nav_item {
     padding: 5px;
+    width: 100%;
   }
 }
 .header_sec .header_nav .header_nav_list .header_nav_item .header_nav_button {
@@ -249,6 +268,11 @@ body {
   font-size: 20px;
   font-weight: bolder;
   color: #000000;
+}
+@media screen and (max-width: 767px) {
+  .header_sec .header_nav .header_nav_list .header_nav_item .header_nav_button {
+    width: 100%;
+  }
 }
 .header_sec .header_nav .header_nav_list .header_nav_item .new_btn {
   position: absolute;
@@ -288,6 +312,8 @@ body {
   }
 }
 #container .wrapper {
+  width: 100%;
+  box-sizing: border-box;
   background: linear-gradient(190deg, #dddef6, #d5e6f6 18.23%, #d4e7f5 54.32%, hsla(225, 7%, 89%, 0) 65%, hsla(225, 7%, 89%, 0));
   margin: 0 calc(50% - var(--vw, 1vw) * 50);
   padding: 0 calc(var(--vw, 1vw) * 50 - 50%);
@@ -310,6 +336,7 @@ body {
 @media screen and (max-width: 767px) {
   #container .wrapper .image_mask_box {
     width: 200px;
+    overflow: hidden;
   }
 }
 #container .wrapper .image_mask_box .pic_masks {
@@ -337,6 +364,8 @@ body {
 }
 @media screen and (max-width: 767px) {
   #container .wrapper .circle_bg .oval_img {
+    max-width: 100%;
+    height: auto;
     width: 300px;
     position: absolute;
     right: 30px;
@@ -413,7 +442,7 @@ body {
 }
 @media screen and (max-width: 767px) {
   #container .wrapper .font_caption {
-    bottom: 190px;
+    bottom: 40px;
     left: 10%;
   }
 }
@@ -440,6 +469,7 @@ body {
   #about .about_text_box {
     bottom: 190px;
     left: 10%;
+    word-wrap: break-word;
   }
 }
 #about .about_text_box .about_title {
@@ -460,14 +490,17 @@ body {
 @media screen and (max-width: 767px) {
   #about .about_pic_show {
     width: 375px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
-#about .about_pic_show .about_pic_things {
+#about .about_pic_things {
   width: 800px;
   height: 4;
 }
 @media screen and (max-width: 767px) {
-  #about .about_pic_show .about_pic_things {
+  #about .about_pic_things {
     width: 375px;
     margin: 0 auto;
     display: block;
@@ -476,17 +509,20 @@ body {
 }
 
 #work {
-  width: 100%;
-  height: 100vh;
   padding-top: 30px;
   overflow: hidden;
+}
+@media screen and (min-width: 767px) {
+  #work {
+    height: 110vh;
+    width: 100%;
+  }
 }
 @media screen and (max-width: 767px) {
   #work {
     margin: 30px 0 20px;
-    height: 144vh;
+    height: 165vh;
     width: 375px;
-    overflow: hidden;
   }
 }
 #work .work_text_box {
@@ -497,6 +533,7 @@ body {
 @media screen and (max-width: 767px) {
   #work .work_text_box {
     margin: 30px 0 20px 5px;
+    word-wrap: break-word;
   }
 }
 #work .work_text_box .work_title {
@@ -580,6 +617,7 @@ body {
 }
 @media screen and (max-width: 767px) {
   #work .work_show_box .worker_list .worker_list_item .work_list_head .work_list_link .work_fig .work_fig_pic img {
+    max-width: 100%;
     height: 300px;
   }
 }
@@ -589,22 +627,31 @@ body {
 }
 
 #interview {
-  width: 100%;
-  height: 120vh;
   padding-top: 30px;
   overflow: hidden;
 }
+@media screen and (min-width: 767px) {
+  #interview {
+    height: 100vh;
+    width: 100%;
+    padding-top: 30px;
+  }
+}
 @media screen and (max-width: 767px) {
   #interview {
-    height: 60vh;
+    height: 80vh;
     width: 375px;
-    overflow: hidden;
   }
 }
 #interview .interview_text_box {
   width: 100%;
   height: auto;
   margin: 30px 0 50px 50px;
+}
+@media screen and (max-width: 767px) {
+  #interview .interview_text_box {
+    word-wrap: break-word;
+  }
 }
 #interview .interview_text_box .interview_title {
   font-size: 44px;
@@ -666,21 +713,29 @@ body {
 }
 
 #FQA {
-  width: 100%;
-  height: 100vh;
-  padding-top: 30px;
   overflow: hidden;
+}
+@media screen and (min-width: 767px) {
+  #FQA {
+    height: 100vh;
+    width: 100%;
+    padding-top: 30px;
+  }
 }
 @media screen and (max-width: 767px) {
   #FQA {
-    height: 90vh;
+    height: 115vh;
     width: 375px;
-    overflow: hidden;
   }
 }
 #FQA .QA_text_box {
   height: auto;
   margin: 30px 30px 50px 50px;
+}
+@media screen and (max-width: 767px) {
+  #FQA .QA_text_box {
+    word-wrap: break-word;
+  }
 }
 #FQA .QA_text_box .QA_title {
   font-size: 44px;
@@ -748,6 +803,7 @@ footer .many_info .text_info {
     display: block;
     padding: 12px 0;
     font-size: 18px;
+    word-wrap: break-word;
   }
 }
 
@@ -756,6 +812,7 @@ footer .many_info .text_info {
   max-width: 800px;
   margin: 0 auto;
   height: 75vh;
+  box-sizing: border-box;
 }
 
 .employment-status {
