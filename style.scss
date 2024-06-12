@@ -340,6 +340,7 @@ body {
 
         @media screen and (max-width: $mobile) {
             width: 375px;
+            overflow: hidden;
         }    
 
         background: linear-gradient(
@@ -501,7 +502,7 @@ body {
 
     @media screen and (max-width: $mobile) {
         margin-top: 130px;
-        width: 100%;
+        width: 375px;
         height: 70vh;
         overflow: hidden;
     }
@@ -541,6 +542,7 @@ body {
             justify-content: center;
             align-items: center;
             height: auto;
+            overflow-x: hidden;
         }
     }
 
@@ -553,6 +555,7 @@ body {
             margin: 0 auto;
             display: block;
             height: 245px;
+            overflow-x: hidden;
         }
     }
 }
@@ -596,6 +599,7 @@ body {
 
         @media screen and (max-width: $mobile) {
             padding: 0 30px;
+            overflow-x: hidden;
         }
 
         .worker_list {
@@ -616,14 +620,14 @@ body {
                 display: grid;
                 grid-template-rows: 60% 40%;
                 grid-gap: 20px;
-                overflow-y: hidden;
+                overflow: hidden;
 
                 @media screen and (max-width: $mobile) {
                     grid-template-rows: 50% 50%;
                 }
 
                 .work_list_head {
-                    overflow-y: hidden;
+                    overflow: hidden;
                     border-radius: 20px;
                     background: brown;
 
@@ -703,6 +707,7 @@ body {
 
         @media screen and (max-width: $mobile) {
             word-wrap: break-word;
+            overflow-x: hidden;
         }
 
         .interview_title {
@@ -794,6 +799,7 @@ body {
 
         @media screen and (max-width: $mobile) {
             word-wrap: break-word;
+            overflow-x: hidden;
         }
 
         .QA_title {
@@ -835,6 +841,7 @@ footer {
 
     @media screen and (max-width: $mobile) {
         height: 100%;
+        width: 100%;
     }
 
     .home_link_box {
@@ -883,6 +890,7 @@ footer {
     margin: 0 auto;
     height: 75vh;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .employment-status {

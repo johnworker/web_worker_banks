@@ -306,6 +306,7 @@ body {
 @media screen and (max-width: 767px) {
   #container .wrapper {
     width: 375px;
+    overflow: hidden;
   }
 }
 #container .wrapper .wrapper_title {
@@ -447,7 +448,7 @@ body {
 @media screen and (max-width: 767px) {
   #about {
     margin-top: 130px;
-    width: 100%;
+    width: 375px;
     height: 70vh;
     overflow: hidden;
   }
@@ -486,6 +487,7 @@ body {
     justify-content: center;
     align-items: center;
     height: auto;
+    overflow-x: hidden;
   }
 }
 #about .about_pic_things {
@@ -498,6 +500,7 @@ body {
     margin: 0 auto;
     display: block;
     height: 245px;
+    overflow-x: hidden;
   }
 }
 
@@ -541,6 +544,7 @@ body {
 @media screen and (max-width: 767px) {
   #work .work_show_box {
     padding: 0 30px;
+    overflow-x: hidden;
   }
 }
 #work .work_show_box .worker_list {
@@ -563,7 +567,7 @@ body {
   display: grid;
   grid-template-rows: 60% 40%;
   grid-gap: 20px;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 @media screen and (max-width: 767px) {
   #work .work_show_box .worker_list .worker_list_item {
@@ -571,7 +575,7 @@ body {
   }
 }
 #work .work_show_box .worker_list .worker_list_item .work_list_head {
-  overflow-y: hidden;
+  overflow: hidden;
   border-radius: 20px;
   background: brown;
 }
@@ -644,6 +648,7 @@ body {
 @media screen and (max-width: 767px) {
   #interview .interview_text_box {
     word-wrap: break-word;
+    overflow-x: hidden;
   }
 }
 #interview .interview_text_box .interview_title {
@@ -728,6 +733,7 @@ body {
 @media screen and (max-width: 767px) {
   #FQA .QA_text_box {
     word-wrap: break-word;
+    overflow-x: hidden;
   }
 }
 #FQA .QA_text_box .QA_title {
@@ -764,6 +770,7 @@ footer {
 @media screen and (max-width: 767px) {
   footer {
     height: 100%;
+    width: 100%;
   }
 }
 footer .home_link_box {
@@ -806,6 +813,7 @@ footer .many_info .text_info {
   margin: 0 auto;
   height: 75vh;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .employment-status {
