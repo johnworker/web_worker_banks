@@ -11,7 +11,18 @@ $(document).ready(function () {
         autoplaySpeed: 5000, // 動畫持續時間為5秒
         speed: 5000, // 圖片切換速度為5秒
         pauseOnHover: false,
-        cssEase: 'linear'
+        cssEase: 'linear',
+        responsive: [
+            {
+                breakpoint: 768, // 手機視圖設置
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false
+                }
+            }
+        ]
     });
 
     $slider.on('afterChange', function(event, slick, currentSlide) {
