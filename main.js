@@ -25,16 +25,16 @@ $(document).ready(function () {
         ]
     });
 
-    $slider.on('afterChange', function(event, slick, currentSlide) {
+    $slider.on('afterChange', function (event, slick, currentSlide) {
         $slider.slick('slickPause'); // 停止自動播放
-        setTimeout(function() {
+        setTimeout(function () {
             $slider.slick('slickPlay'); // 3秒後重新開始播放
         }, 3000); // 停3秒
     });
 });
 
-// 圓形符號動畫區
 
+// 圓形符號動畫區
 function animateCircle() {
     gsap.fromTo(".animate_curcle_one",
         {
@@ -177,9 +177,9 @@ $(document).ready(function () {
 });
 
 // Q&A開合選單
-$(document).ready(function() {
+$(document).ready(function () {
     // FAQ 切換
-    $('.QA_question').click(function() {
+    $('.QA_question').click(function () {
         $(this).next('.QA_answer').slideToggle();
         $(this).parent('.QA_item').siblings().find('.QA_answer').slideUp();
     });
@@ -206,4 +206,4 @@ document.addEventListener('DOMContentLoaded', () => {
 $(".menu_btn").click(function () {
     $(".menu_wrap").toggleClass("active");
     $(this).toggleClass("active");
-  });
+});
