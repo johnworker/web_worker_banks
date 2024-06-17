@@ -794,7 +794,7 @@ body {
 }
 @media screen and (max-width: 767px) {
   #FQA {
-    height: 115vh;
+    height: 110vh;
     width: 375px;
   }
 }
