@@ -179,7 +179,7 @@ body {
   right: -100%;
   top: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.75);
   z-index: 50;
   padding: 120px 50px 50px 50px;
   transition: right 0.3s;
@@ -497,6 +497,18 @@ body {
     margin: 0 90px;
     font-size: 36px;
   }
+}
+#container .wrapper .spiral-path {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 60%;
+  height: 60%;
+  z-index: 10;
+}
+#container .wrapper .spiral-path .spiral {
+  stroke: #ff7b00;
+  stroke-width: 10;
 }
 
 #about {
