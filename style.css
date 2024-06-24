@@ -498,18 +498,6 @@ body {
     font-size: 36px;
   }
 }
-#container .wrapper .spiral-path {
-  position: absolute;
-  top: 50px;
-  left: 50px;
-  display: block;
-}
-#container .wrapper .spiral-path .spiral {
-  stroke: orange;
-  stroke-width: 2;
-  fill: none;
-  display: none;
-}
 
 #about {
   width: 100%;
