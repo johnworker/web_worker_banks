@@ -168,10 +168,15 @@ document.addEventListener('DOMContentLoaded', () => {
         duration: 4,
         repeat: -1,
         ease: "power1.inOut",
-        yoyo: true
+        yoyo: true,
+        motionPath: {
+            path: ".spiral",
+            align: ".spiral",
+            autoRotate: true,
+            alignOrigin: [0.5, 0.5]
+        }
     });
 });
-
 
 
 //關於我們輪播區
