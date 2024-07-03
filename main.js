@@ -207,3 +207,14 @@ $(".menu_btn").click(function () {
     $(".menu_wrap").toggleClass("active");
     $(this).toggleClass("active");
 });
+
+// 滑動到對應區塊的效果
+// 導航滑動效果
+$(".header_nav_button").click(function (event) {
+    event.preventDefault(); // 防止默認行為
+    var target = $(this).attr("href"); // 取得目標區域的ID
+    $('html, body').animate({
+        scrollTop: $(target).offset().top
+    }, 1000); // 平滑滾動的持續時間為1000毫秒（1秒）
+});
+
